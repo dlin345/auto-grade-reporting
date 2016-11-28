@@ -3,7 +3,7 @@ package edu.cpp.cs585.auto_grade_reporting_method;
 /**
  * FailedMethod extends abstract class Method.  This class
  * represents a Java method that has been annotated with
- * @Grade or @Test, and that has not been successfully executed.
+ * @Grade, and that has not been successfully executed.
  * This class includes the Throwable object that caused the
  * Java error or exception that was thrown in the method execution.
  *
@@ -15,8 +15,8 @@ public class FailedMethod extends Method {
 
     private Throwable thrown;
 
-    public FailedMethod(String declaringClass, String methodName, Throwable thrown) {
-        super(declaringClass, methodName);
+    public FailedMethod(String methodName, Throwable thrown) {
+        super(methodName);
 
         this.thrown = thrown;
     }
