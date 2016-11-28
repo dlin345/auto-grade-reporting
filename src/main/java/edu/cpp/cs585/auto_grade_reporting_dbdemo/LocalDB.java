@@ -2,7 +2,6 @@ package edu.cpp.cs585.auto_grade_reporting_dbdemo;
 
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.document.DynamoDB;
-import com.amazonaws.services.dynamodbv2.document.Table;
 
 /**
  * LocalDB represents DynamoDB as it is running locally.  DynamoDB
@@ -12,7 +11,7 @@ import com.amazonaws.services.dynamodbv2.document.Table;
  *
  */
 
-public class LocalDB {
+public class LocalDB implements DB {
 
     private AmazonDynamoDBClient client;
     private DynamoDB dynamoDB;
