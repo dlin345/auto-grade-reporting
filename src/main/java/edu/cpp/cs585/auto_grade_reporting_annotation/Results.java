@@ -138,7 +138,7 @@ public abstract class Results {
     }
 
     /**
-     * Saves this {@link Results} to a JSON file locally.
+     * Saves this {@link Results2} to a JSON file locally.
      */
     protected void saveToJson() {
 
@@ -177,7 +177,7 @@ public abstract class Results {
     }
 
     /**
-     * Prints the {@link Results} to the console.
+     * Prints the {@link Results2} to the console.
      */
     public String toString() {
         String output = "\n";
